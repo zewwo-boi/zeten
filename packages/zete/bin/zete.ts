@@ -1,6 +1,6 @@
-#!/usr/bin/env ts-node-script
+#!/usr/bin/env node
 // For some reason, TypeScript won't accept global types. This is the only solution I found
-/// <reference path="../node_modules/@types/node/index.d.ts" />
+/// <reference types="node" />
 
 import consola from "consola";
 import utils from "./utils";

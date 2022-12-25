@@ -1,7 +1,7 @@
 {
-	"name": "@zeten/zete",
+	"name": "@zewwo/zete",
 	"version": "0.0.1",
-	"description": "",
+	"description": "A simple backend framework. Plug n' play with various existing libraries.",
 	"author": "zewwo-boi",
 	"maintainers": [
 		{
@@ -10,18 +10,27 @@
 			"url": "https://zewwo.io"
 		}
 	],
-	"main": "index",
+	"main": "./dist/index.js",
 	"scripts": {
-		"build": ""
+		"prepare": "pnpm run build",
+		"build": "tsc"
 	},
+	"files": [
+		"./dist/**/*"
+	],
 	"keywords": [],
 	"license": "ISC",
-	"bin": "bin/zete.ts",
-	"devDependencies": {
+	"bin": "./dist/bin/zete.js",
+	"dependencies": {
 		"@types/glob": "^8.0.0",
 		"@types/node": "^18.11.9",
 		"chalk": "4.1.2",
 		"consola": "^2.15.3",
-		"glob": "^8.0.3"
+		"glob": "^8.0.3",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	},
+	"publishConfig": {
+		"directory": "dist"
 	}
 }

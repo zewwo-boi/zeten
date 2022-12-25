@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"esModuleInterop": true,
+		"rootDirs": ["src", "bin"],
+		"outDir": "dist",
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"target": "es5",
+		"strict": true,
+		"declaration": true,
+		"module": "CommonJS"
+	},
+	"exclude": ["node_modules", "dist", "dev"]
+}

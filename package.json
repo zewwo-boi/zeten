@@ -1,8 +1,11 @@
 {
-	"name": "@zeten/zeten",
+	"name": "@zewwo/zeten",
 	"version": "0.0.1",
 	"author": "zewwo-boi",
 	"publisher": "zeten",
+	"workspaces": [
+		"packages/*"
+	],
 	"maintainers": [
 		{
 			"email": "nathanielkang07@gmail.com",
@@ -10,7 +13,7 @@
 			"url": "https://zewwo.io"
 		}
 	],
-	"description": "A simple web framework built with TypeScript and Node.js",
+	"description": "Frameworks made with ❤️",
 	"main": "index",
 	"scripts": {
 		"build": "tsc"
@@ -23,11 +26,8 @@
 		"type": "git"
 	},
 	"devDependencies": {
-		"@swc/cli": "^0.1.57",
-		"@swc/core": "^1.3.10",
 		"lerna": "^6.0.1",
-		"typescript": "^4.8.4",
-		"uglify-js": "^3.17.4"
+		"typescript": "^4.8.4"
 	},
 	"packageManager": "pnpm@7.14.0"
 }

@@ -10,6 +10,6 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@zeten/zete": "*"
+		"@zewwo/zete": "*"
 	}
 }
