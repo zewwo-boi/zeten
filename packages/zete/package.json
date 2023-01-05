@@ -1,7 +1,7 @@
 {
 	"name": "@zewwo/zete",
 	"version": "0.0.1",
-	"description": "A simple backend framework. Plug n' play with various existing libraries.",
+	"description": "A simple backend framework. Plug n' play with various existing libraries such as Express. First class support for TypeScript",
 	"author": "zewwo-boi",
 	"maintainers": [
 		{
@@ -11,6 +11,7 @@
 		}
 	],
 	"main": "./dist/index.js",
+	"types": "types.ts",
 	"scripts": {
 		"prepare": "pnpm run build",
 		"build": "tsc"

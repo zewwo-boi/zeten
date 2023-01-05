@@ -8,6 +8,8 @@ import utils from "./utils";
 const args = process.argv.slice(2) as string[];
 const command = args[0];
 
+// TODO: Switch to yargs?
+
 try {
 	if (command.startsWith("--")) {
 		switch (command) {
@@ -28,9 +30,12 @@ try {
 		case "build":
 			utils.build(); // This will use consecutive logging so no need to log anything here
 			break;
+		case "test": // TODO: Remove in production
+			utils.test();
+			break;
 		default:
 			consola.error(utils.help());
 	}
 } catch (err) {
-	consola.log(utils.version(), `\n\n${utils.help()}`);
+	consola.error(`An error occurred!\n\n${err}`); // TODO: Change in production
 }

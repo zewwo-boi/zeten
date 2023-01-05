@@ -4,12 +4,14 @@
 	"description": "",
 	"main": "index",
 	"scripts": {
-		"build": "zete build"
+		"build": "zete build",
+		"test": "zete test"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"@zewwo/zete": "*"
-	}
+	},
+	"type": "module"
 }

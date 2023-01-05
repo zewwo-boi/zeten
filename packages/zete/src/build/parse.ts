@@ -1,9 +1,9 @@
-import { Routes } from "../utils/Directory";
+import { DirClassification } from "../utils/Directory";
 
 function parse() {
-	const Dir = new Routes();
-	
-	
+	const Dir = new DirClassification();
+
+	console.log(Dir.srcExists);
 }
 
 export default parse;

@@ -1,3 +1,7 @@
-export default function route(req, res) {
-	res.send("Hello world!");
-}
+import { route } from "@zewwo/zete";
+
+export default route({
+	run(req, res) {
+		console.log(`${req} ${res}`);
+	},
+});

@@ -1,6 +1,9 @@
 import chalk from "chalk";
+import fs from "fs";
+import glob from "glob";
+import { register } from "ts-node";
 import packageJson from "../package.json";
-import buildBinary from "../src/entry";
+import build from "../src/entry";
 import { commands } from "./commands.json";
 
 export function version() {
@@ -35,14 +38,18 @@ export function help(args?: string[]) {
 	return help;
 }
 
-function build() {
-	return buildBinary();
+// TODO: Remove from production
+export function test() {
+	const file = fs.readFileSync(glob.sync("./src/routes/**/*.{js,ts}")[0]);
+
+	register();
 }
 
 const utils = {
 	version,
 	help,
 	build,
+	test,
 };
 
 export default utils;
